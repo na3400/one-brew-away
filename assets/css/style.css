@@ -1,0 +1,776 @@
+/* =========================
+   BASIC SETTINGS
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F7F1E5;
+    color: #650D0D;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+header {
+    background-color: #F7F1E5;
+
+    border-bottom:
+            1px solid rgba(101, 13, 13, 0.12);
+}
+
+nav {
+    max-width: 1250px;
+    height: 90px;
+
+    margin: auto;
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #650D0D;
+
+    text-decoration: none;
+
+    font-size: 24px;
+    font-weight: normal;
+
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+
+    list-style: none;
+
+    gap: 35px;
+}
+
+nav a {
+    color: #650D0D;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    opacity: 0.55;
+}
+
+
+/* =========================
+   HOME
+   ========================= */
+
+.hero {
+    min-height: 78vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+.hero-small,
+.section-small,
+.menu-small-title {
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(65px, 9vw, 125px);
+
+    font-weight: normal;
+
+    line-height: 0.9;
+}
+
+.tagline {
+    margin-top: 25px;
+    margin-bottom: 35px;
+
+    font-size: 19px;
+
+    font-style: italic;
+}
+
+
+/* MAIN BUTTON */
+
+.main-button {
+    display: inline-block;
+
+    background-color: #650D0D;
+    color: #F7F1E5;
+
+    padding: 15px 32px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   HOME FEATURES
+   ========================= */
+
+.feature-section {
+    background-color: #650D0D;
+    color: #F7F1E5;
+
+    text-align: center;
+
+    padding: 100px 8%;
+}
+
+.feature-section h2 {
+    font-size: 50px;
+
+    font-weight: normal;
+
+    margin-bottom: 50px;
+}
+
+.cards {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    border:
+            1px solid rgba(247, 241, 229, 0.5);
+
+    padding: 60px 25px;
+
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 27px;
+
+    font-weight: normal;
+
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   MENU
+   ========================= */
+
+.menu-page {
+    padding: 80px 6% 120px;
+
+    text-align: center;
+}
+
+.menu-page h1 {
+    font-size: 70px;
+
+    font-weight: normal;
+
+    margin-bottom: 15px;
+}
+
+.menu-intro {
+    font-size: 17px;
+
+    margin-bottom: 70px;
+}
+
+
+/* PRODUCT GRID */
+
+.flavor-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    column-gap: 55px;
+
+    row-gap: 90px;
+}
+
+
+/* PRODUCT CARD */
+
+.flavor-card {
+    background-color: #FFFDF8;
+
+    padding: 15px 15px 28px;
+
+    border-radius: 8px;
+
+    box-shadow:
+            0 8px 25px rgba(101, 13, 13, 0.08);
+
+    transition: 0.3s;
+}
+
+.flavor-card:hover {
+    transform: translateY(-5px);
+}
+
+.flavor-card img {
+    width: 100%;
+
+    height: 470px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 5px;
+}
+
+.product-info {
+    padding: 22px 10px 0;
+
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 23px;
+
+    font-weight: normal;
+
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 17px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ADD TO CART */
+
+.order-button {
+    width: 100%;
+
+    background-color: #650D0D;
+    color: #F7F1E5;
+
+    border: none;
+
+    border-radius: 30px;
+
+    padding: 14px 20px;
+
+    font-family: Georgia,
+    "Times New Roman",
+    serif;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.order-button:hover {
+    background-color: #7C1717;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   CART
+   ========================= */
+
+.cart-page {
+    max-width: 1000px;
+
+    min-height: 70vh;
+
+    margin: auto;
+
+    padding: 80px 30px 120px;
+
+    text-align: center;
+}
+
+.cart-page h1 {
+    font-size: 65px;
+
+    font-weight: normal;
+
+    margin-bottom: 15px;
+}
+
+.cart-intro {
+    font-size: 17px;
+
+    margin-bottom: 60px;
+}
+
+
+#cart-items {
+    text-align: left;
+}
+
+
+.cart-item {
+    background-color: #FFFDF8;
+
+    margin-bottom: 20px;
+
+    padding: 25px 30px;
+
+    border-radius: 8px;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr auto;
+
+    align-items: center;
+
+    gap: 25px;
+
+    box-shadow:
+            0 5px 20px rgba(101, 13, 13, 0.06);
+}
+
+
+.cart-product h3 {
+    font-size: 21px;
+
+    font-weight: normal;
+
+    margin-bottom: 6px;
+}
+
+.cart-product p {
+    font-size: 13px;
+
+    opacity: 0.7;
+}
+
+
+/* QUANTITY */
+
+.quantity-controls {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.quantity-controls button {
+    width: 32px;
+    height: 32px;
+
+    border: 1px solid #650D0D;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: #650D0D;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+
+/* REMOVE */
+
+.remove-button {
+    background: none;
+
+    border: none;
+
+    color: #650D0D;
+
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+
+
+/* CART TOTAL */
+
+.cart-summary {
+    max-width: 450px;
+
+    margin: 50px 0 0 auto;
+
+    padding-top: 30px;
+
+    border-top:
+            1px solid rgba(101, 13, 13, 0.25);
+}
+
+.summary-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+/* CHECKOUT */
+
+.checkout-button {
+    width: 100%;
+
+    padding: 17px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #650D0D;
+
+    color: #F7F1E5;
+
+    font-family: Georgia,
+    "Times New Roman",
+    serif;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+
+/* EMPTY CART */
+
+.empty-cart {
+    display: none;
+
+    padding: 70px 20px;
+}
+
+.empty-cart h2 {
+    font-size: 32px;
+
+    font-weight: normal;
+
+    margin-bottom: 12px;
+}
+
+.empty-cart p {
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   CONTACT
+   ========================= */
+
+.contact-page {
+    min-height: 70vh;
+
+    padding: 100px 30px;
+
+    text-align: center;
+}
+
+.contact-page h1 {
+    font-size: 65px;
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+.contact-intro {
+    max-width: 500px;
+
+    margin: 0 auto 60px;
+
+    line-height: 1.7;
+}
+
+.contact-box {
+    max-width: 700px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.contact-box div {
+    border:
+            1px solid rgba(101, 13, 13, 0.3);
+
+    padding: 40px 15px;
+}
+
+.contact-label {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #650D0D;
+
+    color: #F7F1E5;
+
+    text-align: center;
+
+    padding: 55px 20px;
+}
+
+footer h3 {
+    font-size: 24px;
+
+    font-weight: normal;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+.copyright {
+    margin-top: 25px;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    opacity: 0.7;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .flavor-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 50px 30px;
+    }
+
+    .cart-item {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+}
+
+/* =========================
+   CART NOTIFICATION
+   ========================= */
+
+.cart-notification {
+    position: fixed;
+
+    bottom: 30px;
+    left: 50%;
+
+    transform: translate(-50%, 20px);
+
+    background-color: #650D0D;
+    color: #F7F1E5;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    letter-spacing: 0.5px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+    opacity: 0;
+
+    z-index: 9999;
+
+    transition: all 0.3s ease;
+
+    white-space: nowrap;
+}
+
+.cart-notification.show {
+    opacity: 1;
+
+    transform: translate(-50%, 0);
+}
+
+.cart-notification span {
+    margin-right: 8px;
+}
+
+
+/* PHONE */
+
+@media (max-width: 600px) {
+
+    .cart-notification {
+        bottom: 25px;
+
+        width: calc(100% - 40px);
+
+        text-align: center;
+
+        white-space: normal;
+    }
+
+}
+
+
+/* =========================
+   PHONE
+   ========================= */
+
+@media (max-width: 650px) {
+
+    nav {
+        height: auto;
+
+        padding: 25px 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .flavor-grid {
+        grid-template-columns: 1fr;
+
+        row-gap: 50px;
+    }
+
+
+    .flavor-card img {
+        height: auto;
+    }
+
+
+    .cart-item {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+
+    .cart-summary {
+        margin: 50px auto 0;
+    }
+
+
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
+
+}
