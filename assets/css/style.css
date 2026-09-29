@@ -705,6 +705,238 @@ footer p {
 
 }
 
+/* =========================
+   CHECKOUT PAGE
+   ========================= */
+
+.checkout-page {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 80px 30px 120px;
+}
+
+.checkout-page > h1 {
+    text-align: center;
+
+    font-size: 65px;
+    font-weight: normal;
+
+    margin-bottom: 70px;
+}
+
+.checkout-page > .menu-small-title {
+    text-align: center;
+}
+
+
+.checkout-layout {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+}
+
+
+.checkout-details,
+.checkout-order {
+    background-color: #FFFDF8;
+
+    padding: 40px;
+
+    border-radius: 8px;
+
+    box-shadow:
+            0 8px 25px rgba(101, 13, 13, 0.07);
+}
+
+
+.checkout-details h2,
+.checkout-order h2 {
+    font-size: 30px;
+
+    font-weight: normal;
+
+    margin-bottom: 35px;
+}
+
+
+/* FORM */
+
+.checkout-details label {
+    display: block;
+
+    margin: 22px 0 8px;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+
+.checkout-details input {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    background-color: #F7F1E5;
+
+    border: 1px solid
+    rgba(101, 13, 13, 0.25);
+
+    border-radius: 5px;
+
+    color: #650D0D;
+
+    font-family: Georgia,
+    "Times New Roman",
+    serif;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.checkout-details input:focus {
+    border-color: #650D0D;
+}
+
+
+/* ORDER ITEMS */
+
+.checkout-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px 0;
+
+    border-bottom:
+            1px solid rgba(101, 13, 13, 0.12);
+}
+
+
+.checkout-item h3 {
+    font-size: 17px;
+
+    font-weight: normal;
+
+    margin-bottom: 5px;
+}
+
+
+.checkout-item p {
+    font-size: 13px;
+
+    opacity: 0.65;
+}
+
+
+/* TOTAL */
+
+.checkout-total {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 30px 0;
+
+    padding-top: 20px;
+
+    font-size: 22px;
+}
+
+
+/* PAYMENT */
+
+.checkout-link {
+    display: block;
+
+    text-align: center;
+
+    text-decoration: none;
+}
+
+
+.secure-payment {
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-size: 11px;
+
+    opacity: 0.65;
+}
+
+
+/* MESSAGE */
+
+.checkout-message {
+    position: fixed;
+
+    bottom: 30px;
+    left: 50%;
+
+    transform:
+            translate(-50%, 20px);
+
+    background-color: #650D0D;
+    color: #F7F1E5;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    z-index: 9999;
+
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+
+.checkout-message.show {
+    opacity: 1;
+
+    transform:
+            translate(-50%, 0);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+    .checkout-layout {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .checkout-page {
+        padding:
+                60px 20px 80px;
+    }
+
+    .checkout-page > h1 {
+        font-size: 48px;
+
+        margin-bottom: 45px;
+    }
+
+    .checkout-details,
+    .checkout-order {
+        padding: 28px 22px;
+    }
+
+}
+
 
 /* =========================
    PHONE
